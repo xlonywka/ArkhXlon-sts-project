@@ -1,15 +1,14 @@
-import translate_func  # Импортируем переводчик
+from yandex_translate import YandexTranslate
+translate = YandexTranslate('trnsl.1.1.20181216T165708Z.256f02815004a360.907b12c1d0b00c3d0555378e945df82d09824dd2')
 
 
-google_translate = translate_func.Translator()  # Инициализируем переводчик
-
-
-def text_to_text(text, lang_to):
-    '''
-    First param was text to translate.
-    Second param is the language to be translated.
-    :Example:
-    >>> text_to_text('собака', 'en')
-    'dog' was returned
-    '''
-    return(google_translate.translate(text, lang_to))
+def text_to_text(text, lang_to, lang_from):
+    if lang_to=='English':
+        lang_to_y='en'
+    elif lang_to=='Русский':
+        lang_to_y='ru'
+    if lang_from=='English':
+        lang_from_y='en'
+    if lang_from=='Русский':
+        lang_from_y='ru'
+    return(translate.translate(text, lang_from_y+'-'+lang_to_y).get('text')[0])
