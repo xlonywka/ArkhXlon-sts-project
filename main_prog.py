@@ -33,13 +33,12 @@ class Example(QWidget):
             sys.exit(app.exec_())
 
     def initUI(self):  # User Interface
-        self.setFixedSize(575, 268)
+        self.setFixedSize(400, 268)
         self.setWindowTitle('Speech-To-Speech')
         self.setWindowIcon(QIcon('icon.ico'))
         self.text_input()
         self.text_output()
         self.choose_language()
-        self.button_select_file()
         self.play_audio()
         self.from_mic()
 
