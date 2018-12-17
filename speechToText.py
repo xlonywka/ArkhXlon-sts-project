@@ -1,15 +1,14 @@
 import speech_recognition as sr  # Импортируем распознавание голоса
 
 
-def speechToText(flag, lang, path=''):
+def speech_to_text(flag, lang, path=''):
     r = sr.Recognizer()  # Инициализируем распознаватель голоса
-    if path != '' or path != ' ' or path != '\t':
+    if flag is False:  # Проверка флага
+        with sr.Microphone() as source:
+            audio = r.listen(source)  # Прослушиваем микрофон
+    else:
         open_file = sr.AudioFile(path)  # Открываем файл
         audio = r.record(open_file)
-    else:
-        if flag is False:
-            with sr.Microphone() as source:
-                audio = r.listen(source)  # Прослушиваем микрофон
     try:
         lng = ''  # Параметр языка для google
         if lang == 'ru':

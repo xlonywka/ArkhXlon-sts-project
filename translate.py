@@ -4,6 +4,9 @@ translate = YandexTranslate('trnsl.1.1.20181216T165708Z.256f0281500' + keylong)
 
 
 def text_to_text(text, lang_to, lang_from):
+    # Переводчик. Первый элемент - текст
+    # Второй - язык с которого переводить
+    # Третий - Язык на который переводить
     if lang_to == 'English':
         lang_to_y = 'en'
     elif lang_to == 'Русский':
