@@ -27,10 +27,14 @@ class Example(QWidget):
             (self.chln1).currentText()))
 
     def tts_func(self):  # Play button function
-            textToSpeech.text_to_text((self.name_output).text(),
+        textToSpeech.text_to_text((self.name_output).text(),
+                                  (self.chln2).currentText())
+        playsound.playsound('text_on_another_lang.mp3', True)
+        sys.exit(app.exec_())
+
+    def pp_func(slef):
+        textToSpeech.text_to_text((self.name_output).text(),
                                       (self.chln2).currentText())
-            playsound.playsound('text_on_another_lang.mp3', True)
-            sys.exit(app.exec_())
 
     def initUI(self):  # User Interface
         self.setFixedSize(400, 268)
@@ -41,12 +45,19 @@ class Example(QWidget):
         self.choose_language()
         self.play_audio()
         self.from_mic()
+        self.play_audio_w()
 
-    def play_audio(self):  # Play button
+    def play_audio(self):  # Save button with play
         play = QPushButton('Сохранить, озвучить и закрыть', self)
         play.resize(180, 25)
         play.move(64, 185)
         play.clicked.connect(self.tts_func)
+
+    def play_audio_w(self):  # Save button
+        play = QPushButton('Сохранить и закрыть', self)
+        play.resize(180, 25)
+        play.move(64, 220)
+        play.clicked.connect(self.pp_func)
 
     def from_mic(self):  # From mic button
         micbtn = QPushButton('С микрофона', self)
