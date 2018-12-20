@@ -40,7 +40,7 @@ class Example(QWidget):
 
     def only_save(self):
         textToSpeech.text_to_text((self.name_output).text(),
-                                      (self.chln2).currentText())
+                                  (self.chln2).currentText())
         sys.exit(app.exec_())
 
     def initUI(self):  # User Interface
