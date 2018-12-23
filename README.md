@@ -7,6 +7,6 @@ Download .EXE https://mega.nz/#!M41ySSRQ!ByPfTSs2spmVoLtGYrTS-WVAVZgXRHShery3Qf8
 We are going to improve the project and add language support.
 # Needed librares
 SpeechRecognition, PyAudio, PyQT5, playsound, vlc, PySound
-
-
+# Presentation
+Prezi: https://prezi.com/view/bgUxsevO8OK5YOmYZfaD/
 The ArkhXlon Developer team
