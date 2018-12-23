@@ -9,4 +9,5 @@ We are going to improve the project and add language support.
 SpeechRecognition, PyAudio, PyQT5, playsound, vlc, PySound
 # Presentation
 Prezi: https://prezi.com/view/bgUxsevO8OK5YOmYZfaD/
-The ArkhXlon Developer team
+
+# The ArkhXlon Developer team
