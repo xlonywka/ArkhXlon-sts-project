@@ -6,7 +6,7 @@ Download .EXE https://mega.nz/#!M41ySSRQ!ByPfTSs2spmVoLtGYrTS-WVAVZgXRHShery3Qf8
 # What's next
 We are going to improve the project and add language support.
 # Needed librares
-SpeechRecognition, PyAudio, PyQT5, playsound, vlc, PySound
+SpeechRecognition, PyAudio, PyQT5, playsound, python-vlc, PySound, yandex_translate
 # Presentation
 Prezi: https://prezi.com/view/bgUxsevO8OK5YOmYZfaD/
 
